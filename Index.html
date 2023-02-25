@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Food Company Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Food Company</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <button class="button" id="loginBtn">Login</button>
+        <button class="button" id="signupBtn">Signup</button>
+      </div>
+    </header>
+    <div class="container">
+      <form action="" class="search-bar">
+        <input type="text" placeholder="search here" name="q" />
+        <button type="submit"><img src="/images/search.png" /></button>
+      </form>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" /><br /><br />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" /><br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Signup</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" /><br /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" /><br /><br />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" /><br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+    <div class="dineinout-container">
+      <span
+        ><button class="category-btn active" data-category="all">
+          All
+        </button></span
+      >
+      <span
+        ><button class="show-category-btn" data-category="dinein">
+          Dine-in
+        </button></span
+      >
+      <span
+        ><button class="show-category-btn" data-category="takeout">
+          Take-Out
+        </button></span
+      >
+    </div>
+    <div class="card-container">
+      <div class="card" data-category="dinein">
+        <img
+          src="/images/antonio-werner-Qc4i5V_pHEA-unsplash.jpg"
+          alt="Card 1"
+        />
+        <div class="card-text">
+          <h2>SAM Chaat corner &nbsp;&nbsp;&nbsp;&nbsp; 4.2</h2>
+          <p>Views 10K</p>
+        </div>
+      </div>
+      <div class="card" data-category="takeout">
+        <img src="/images/eiliv-aceron-ZuIDLSz3XLg-unsplash.jpg" alt="Card 1" />
+        <div class="card-text">
+          <h2>YUM -YUM &nbsp;&nbsp;&nbsp;&nbsp; 4.4</h2>
+          <p>Views 12K</p>
+        </div>
+      </div>
+      <div class="card" data-category="dinein">
+        <img
+          src="/images/saktheeswaran-govindarajan-yCIcDyKm440-unsplash.jpg"
+          alt="Card 1"
+        />
+        <div class="card-text">
+          <h2>South Festival &nbsp;&nbsp;&nbsp;&nbsp; 4.8</h2>
+          <p>Views 20K</p>
+        </div>
+      </div>
+      <div class="card" data-category="takeout">
+        <img
+          src="/images/shreyak-singh-0j4bisyPo3M-unsplash.jpg"
+          alt="Card 1"
+        />
+        <div class="card-text">
+          <h2>Rajasthani Corner &nbsp;&nbsp;&nbsp;&nbsp; 4.9</h2>
+          <p>Views 18K</p>
+        </div>
+      </div>
+      <div class="card" data-category="dinein">
+        <img src="/images/taylor-kiser-POFG828-GQc-unsplash.jpg" alt="Card 1" />
+        <div class="card-text">
+          <h2>Bekaneri Chaat&nbsp;&nbsp;&nbsp;&nbsp; 4.2</h2>
+          <p>Views 10K</p>
+        </div>
+      </div>
+      <div class="card" data-category="takeout">
+        <img
+          src="/images/victoria-shes-cMrLNX24eI0-unsplash.jpg"
+          alt="Card 1"
+        />
+        <div class="card-text">
+          <h2>Roll & Rock &nbsp;&nbsp;&nbsp;&nbsp; 4.4</h2>
+          <p>Views 14K</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
